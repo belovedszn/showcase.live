@@ -1,0 +1,14 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:#fff;color:#454745;font-family:var(--font-inter),ui-sans-serif,system-ui,sans-serif;letter-spacing:-0.006em}
+/* Display voice: Wise Sans is proprietary, so Inter Black (900) with -0.04em tracking is the documented substitute */
+.font-display{font-weight:900;letter-spacing:-0.04em;line-height:.9;text-transform:uppercase;color:#0e0f0c}
+[class*="border-line"]:not([class*="rounded"]){border-radius:10px}
+:focus-visible{outline:2px solid #163300;outline-offset:2px}
+.dark-band{background:#163300;color:#fff}
+.dark-band .font-display,.dark-band .text-spruce{color:#9fe870}
+.dark-band .text-slate{color:#d4e4c8}
+.dark-band [class*="border-line"]{border-color:rgba(255,255,255,.25)}
+.dark-band .bg-line{background:rgba(255,255,255,.25)}
+.dark-band [role=status]{border-color:#9fe870}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
